@@ -19,11 +19,17 @@ const config: Config = {
   			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
+  				foreground: 'hsl(var(--popover-foreground))',
   			},
+			gray: {
+				DEFAULT: 'hsl(var(--gray))',
+				foreground: 'hsl(var(--gray-foreground))',
+				300: 'var(--gray-300)'
+			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				foreground: 'hsl(var(--primary-foreground))',
+				900: 'var(--primary-900)',
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -88,7 +94,15 @@ const config: Config = {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+		fontFamily: {
+			FustatLight: ['FustatLight'],
+			FustatRegular: ['FustatRegular'],
+			FustatMedium: ['FustatMedium'],
+			FustatSemibold: ['FustatSemibold'],
+			FustatBold: ['FustatBold'],
+			SfProRegular: ['SfProRegular'],
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
