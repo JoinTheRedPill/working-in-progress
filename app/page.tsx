@@ -26,7 +26,7 @@ export default function ComingSoon() {
         Más información en
         </p>
         <a
-          href="https://discord.gg/TU-LINK-AQUI"
+          href="https://discord.gg/sTs5dNeZmb"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-lg ease-in duration-300 flex items-center justify-center gap-2 border border-solid font-FustatBold leading-normal w-max bg-blue-10 hover:bg-blue-20 text-white text-base py-2.5 px-7 flex-row !border-none !h-[46px] cursor-pointer hover:opacity-75	"
