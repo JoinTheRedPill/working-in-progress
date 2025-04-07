@@ -1,6 +1,6 @@
 export default function ComingSoon() {
   const texts = JSON.parse(
-    process.env.COMING_SOON_TEXTS ||
+    process.env.NEXT_PUBLIC_COMING_SOON_TEXTS ||
       '{"title":"Actualización en marcha...","subtitle":"lo bueno se hace esperar"}'
   );
 
