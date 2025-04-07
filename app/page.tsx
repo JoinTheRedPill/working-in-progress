@@ -1,3 +1,6 @@
+import DiscordIcon from "@/components/icons/discord"
+import { Sparkles } from "lucide-react"
+
 export default function ComingSoon() {
   const texts = JSON.parse(
     process.env.NEXT_PUBLIC_COMING_SOON_TEXTS ||
@@ -18,11 +21,19 @@ export default function ComingSoon() {
         <p className="text-4xl FustatSemibold text-gray-300 mb-3">
           {texts.subtitle}
         </p>
-        <img
-          src="/images/loading.gif"
-          alt="Reental"
-          className="w-20 opacity-30	"
-        />
+        <img src="/images/loading.gif" alt="Reental" className="w-20 opacity-30	" />
+        <p className="text-2xl FustatSemibold text-gray-300 mb-2 mt-3">
+        Más información en
+        </p>
+        <a
+          href="https://discord.gg/TU-LINK-AQUI"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-lg ease-in duration-300 flex items-center justify-center gap-2 border border-solid font-FustatBold leading-normal w-max bg-blue-10 hover:bg-blue-20 text-white text-base py-2.5 px-7 flex-row !border-none !h-[46px] cursor-pointer hover:opacity-75	"
+        >
+        <DiscordIcon />
+          Discord
+        </a>
       </div>
 
       {/* Decorative elements */}

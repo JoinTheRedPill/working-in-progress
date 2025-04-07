@@ -26,6 +26,11 @@ const config: Config = {
 				foreground: 'hsl(var(--gray-foreground))',
 				300: 'var(--gray-300)'
 			},
+			blue: {
+				DEFAULT: 'hsl(var(--blue))',
+				foreground: 'hsl(var(--blue-foreground))',
+				10: 'var(--blue-10)'
+			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))',
