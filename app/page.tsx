@@ -1,10 +1,9 @@
 import DiscordIcon from "@/components/icons/discord"
-import { Sparkles } from "lucide-react"
 
 export default function ComingSoon() {
   const texts = JSON.parse(
     process.env.NEXT_PUBLIC_COMING_SOON_TEXTS ||
-      '{"title":"Actualización en marcha...","subtitle":"lo bueno se hace esperar"}'
+      '{"title":"Actualización en marcha...", "subtitle":"lo bueno se hace esperar", "moreInfo":"Más información en"}'
   );
 
   return (
@@ -22,8 +21,8 @@ export default function ComingSoon() {
           {texts.subtitle}
         </p>
         <img src="/images/loading.gif" alt="Reental" className="w-20 opacity-30	" />
-        <p className="text-2xl FustatSemibold text-gray-300 mb-2 mt-3">
-        Más información en
+        <p className="text-lg FustatSemibold text-gray-300 mb-2 mt-3">
+          {texts.moreInfo}
         </p>
         <a
           href="https://discord.gg/sTs5dNeZmb"
